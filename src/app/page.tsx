@@ -166,7 +166,7 @@ const Home = () => {
 
       {selectedUser && (
         <div className="bg-white shadow p-6 rounded mb-8">
-          <h2 className="text-2xl font-bold mb-2">{selectedUser.name}'s Profile</h2>
+         <h2 className="text-2xl font-bold mb-2">{`${selectedUser.name}'s Profile`}</h2>
           <p>Email: {selectedUser.email}</p>
           <p>Phone: {selectedUser.phone}</p>
           <p>City: {selectedUser.address.city}</p>
