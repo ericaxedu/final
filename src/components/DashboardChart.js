@@ -1,6 +1,10 @@
+'use client';
 import React, { useEffect, useState } from 'react';
-import Chart from 'react-apexcharts';
+import dynamic from 'next/dynamic';
 import axios from 'axios';
+
+// Dynamically import ApexCharts with SSR disabled
+const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
 const DashboardChart = () => {
   const [userCount, setUserCount] = useState(0);
